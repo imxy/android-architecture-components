@@ -49,7 +49,7 @@ public class ProductListFragment extends Fragment {
             @Nullable Bundle savedInstanceState) {
         mBinding = DataBindingUtil.inflate(inflater, R.layout.list_fragment, container, false);
 
-        mProductAdapter = new ProductAdapter(mProductClickCallback);
+        mProductAdapter = new ProductAdapter( mProductClickCallback);
         mBinding.productsList.setAdapter(mProductAdapter);
 
         return mBinding.getRoot();
@@ -91,4 +91,9 @@ public class ProductListFragment extends Fragment {
             }
         }
     };
+
+    public interface ProductClickCallback {
+        void onClick(Product product);
+    }
+
 }

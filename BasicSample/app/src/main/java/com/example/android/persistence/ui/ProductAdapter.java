@@ -26,6 +26,7 @@ import android.view.ViewGroup;
 import com.example.android.persistence.databinding.ProductItemBinding;
 import com.example.android.persistence.model.Product;
 import com.example.android.persistence.R;
+import com.example.android.persistence.ui.ProductListFragment.ProductClickCallback;
 
 import java.util.List;
 import java.util.Objects;
